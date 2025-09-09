@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casona do Açaí - Organizador</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Organizador de Açaí</h1>
+    <p>Selecione os itens para montar o pedido:</p>
+
+    <div class="form-section">
+      <h3>Opções de Pedido:</h3>
+      
+      <div class="form-group">
+        <label for="coposProntosSelect">Copo Pronto:</label>
+        <select id="coposProntosSelect" class="form-control"></select>
+      </div>
+
+      <div id="personalizadoContainer">
+        <div class="form-group">
+          <label for="tamanhoCopoSelect">Tamanho do Copo:</label>
+          <select id="tamanhoCopoSelect" class="form-control"></select>
+        </div>
+
+        <div class="form-group">
+          <label for="quantidadeSelect">Quantidade de Massas:</label>
+          <select id="quantidadeSelect" class="form-control">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+
+        <div id="massaSelectsContainer">
+          </div>
+
+        <div class="form-group">
+          <label for="cremesMeioSelect">Cremes do Meio:</label>
+          <select id="cremesMeioSelect" class="form-control" multiple></select>
+        </div>
+
+        <div class="form-group">
+          <label for="frutasSelect">Frutas do Meio:</label>
+          <select id="frutasSelect" class="form-control" multiple></select>
+        </div>
+
+        <div class="form-group">
+          <label for="cremesTopoSelect">Cremes do Topo:</label>
+          <select id="cremesTopoSelect" class="form-control" multiple></select>
+        </div>
+
+        <div class="form-group">
+          <label for="confetesSelect">Confetes do Topo:</label>
+          <select id="confetesSelect" class="form-control" multiple></select>
+        </div>
+
+      </div>
+      
+      <button id="organizarBtn" class="btn btn-primary">Organizar Pedido</button>
+    </div>
+
+    <div id="resultado" class="result-section">
+      </div>
+  </div>
+
+  <script src="/src/index.js"></script>
+</body>
+</html>
